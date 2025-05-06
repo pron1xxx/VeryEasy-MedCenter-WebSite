@@ -1,0 +1,15 @@
+@import "_colors";
+
+%painted_button {
+    border-radius: 5px 5px 5px 5px;
+    background-color: $accent_color;
+    border: none;
+    color: $text_color2;
+}
+
+%outline_button {
+    border-radius: 5px 5px 5px 5px;
+    background-color: #00ADC500;
+    border: 1px solid $accent_color;
+    color: $accent_color;
+}

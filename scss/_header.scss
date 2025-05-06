@@ -1,0 +1,63 @@
+@import "_colors";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0px 74px;
+    margin: 30px 0;
+    background-color: $backround_elements_color;
+    border-radius: 20px 20px 20px 20px;
+    transition: all 0.3s ease;
+    .logo {
+        max-width: 60px;
+        max-height: 60px;
+        min-height: 39px;
+        min-width: 39px;
+    }
+
+    .header_nav {
+        list-style-type: none;
+        display: flex;
+        gap: 37px;
+    }
+
+    a {
+        font-size: 16px;
+        color: black;
+        font-weight: 300;
+        transition: all 0.3s ease;
+
+        &:hover {
+            font-size: 17px;
+            color: $accent_color;
+        }
+    }
+
+    .header_button {
+        border: none;
+        background-color: #F3F3F300;
+        font-weight: 700;
+        color: $accent_color;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        background: #F3F3F300;
+        justify-content: center;
+        .header_nav {
+            display: none;
+        }
+
+        .header_button {
+            display: none;
+        }
+    }
+}
+
+
+

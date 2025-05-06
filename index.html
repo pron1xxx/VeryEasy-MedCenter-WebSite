@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Поликлиника онлайн</title>
+</head>
+<body>
+    <div class="sign_up_wrapper"> 
+        <form class="sign_up_window"> 
+        <h1> Записаться к врачу </h1>
+        <div class="block1"> 
+            <label for="worker-select"> Выберете специалиста: </label>
+            <select name="worker" id="worker-select">
+                <option value="select"> </option>
+            </select>
+        </div>
+        <div class="block2">
+            <label for="days">Выберите день:</label>
+            <div class="days" id="days">
+              <h1 class="month">Май</h1>
+              <ul class="days_name">
+                <li>Пн</li>
+                <li>Вт</li>
+                <li>Ср</li>
+                <li>Чт</li>
+                <li>Пт</li>
+                <li>Сб</li>
+                <li>Вс</li>
+              </ul>
+              <div class="days_grid" id="days_grid"></div>
+            </div>
+          </div>
+        
+        <h1 id="not_time"> Нет свободного времени в этот день! </h1>
+        <div class="block3">
+            <label for=""> Выберете время: </label> 
+            <div class="time_section">
+                <h1> Утро </h1>
+                <ul class="available_time">
+                    <li class="time_li">10:00</li>
+                    <li class="time_li">10:30</li>
+                    <li class="time_li">11:00</li>
+                    <li class="time_li">11:30</li>
+                </ul>
+            </div>
+            <div class="time_section">
+                <h1> День </h1>
+                <ul class="available_time">
+                    <li class="time_li">13:30</li>
+                    <li class="time_li">14:00</li>
+                    <li class="time_li">15:30</li>
+                    <li class="time_li">16:00</li>
+                </ul>
+            </div>
+            <div class="time_section">
+                <h1> Вечер </h1>
+                <ul class="available_time">
+                    <li class="time_li">18:00</li>
+                    <li class="time_li">18:30</li>
+                    <li class="time_li">19:00</li>
+                    <li class="time_li">19:30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="block4">
+            <label for=""> Укажите данные: </label>
+            <div class="user_data_inputs"> 
+                <input type="text" placeholder="Ваше ФИО" id="user_data">
+                <input type="text" placeholder="Ваш возраст" id="user_data">
+                <input type="text" placeholder="Номер телефона" id="user_data">
+            </div>
+            <h2> Приходя на прием при себе нужно иметь паспорт и снилс </h2>
+            <button class="painted_button" id="send"> Записаться </button>
+        </div>
+    </form>
+    </div>
+    
+    <div class="burger_window"> 
+        <img src="./image/close_icon.svg" alt="" id="close_button_burger">
+        <ul class="burger_nav"> 
+            <li><a href="index.html">Главная </a> </li>
+            <li><a href="about.html">О нас</a> </li>
+            <li><a href="about.html#contacts">Контакты</a> </li>
+            <li><a href="index.html#feedbacks">Отзывы</a>  </li>
+        </ul>
+    </div>
+
+    <div class="container"> 
+        <header class="header"> 
+            <div class="logo" id="open_burger_button"> <img src="./image/Logo.svg" alt=""> </div>
+            <ul class="header_nav"> 
+                <li><a href="index.html">Главная </a> </li>
+                <li><a href="about.html">О нас</a> </li>
+                <li><a href="about.html#contacts">Контакты</a> </li>
+                <li><a href="index.html#feedbacks">Отзывы</a>  </li>
+            </ul>
+            <button class="header_button signup_btn"> Записаться </button>
+        </header>
+    
+        <section class="section1"> 
+            <div class="big_image"> 
+                <div class="left_side"> 
+                    <h1> Запишись на прием онлайн и не стой в очередях </h1>
+                    <h2> Онлайн к любому врачу на свободное время </h2>
+                    <div class="banner_butons"> 
+                        <button class="painted_button"> К врачам </button>
+                        <button class="outline_button signup_btn"> Записаться </button>
+                    </div>
+                </div>
+                <div class="hero_image">  
+                    <div class="absolute_position"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2">  
+            <div class="left_side_section2"> 
+                <h1> Не хотите стоять в очереди из 100 бабушек?
+                    Этого легко избежать!  </h1>
+                <h2> Три шага и вы записаны на прием к врачу в удобное для вас время! </h2>
+                <button class="painted_button signup_btn"> Записаться </button>
+            </div>
+            <div class="right_side_section2"> 
+                <div class="numbers_line"> 
+                    <div class="number-circle"> 1 </div>
+                    <hr> 
+                    <div class="number-circle"> 2 </div>
+                    <hr>
+                    <div class="number-circle"> 3 </div>
+                </div>
+
+                <div class="text_blocks"> 
+                    <div class="text_block"> 
+                        <h1> Выберите нужного врача </h1>
+                        <h2> Подберите того, кто вам нужен из списка наших профи </h2>
+                    </div>
+                    <div class="text_block" style="margin-top: 32px;"> 
+                        <h1> Узнайте доступное время </h1>
+                        <h2> Просмотрите расписание врача и выберете удобное для вас время </h2>
+                    </div>
+                    <div class="text_block" style="margin-top: 32px;"> 
+                        <h1> Запишитесь на прием </h1>
+                        <h2> Потвердите запись в пару кликов и получите потверждение о визите </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3" id="feedbacks"> 
+            <h1 class="section3_article"> Отзывы о нашем сервисе </h1>
+            <div class="otz_cards"> 
+                <div class="otz_card"> 
+                    <div class="first_line"> 
+                        <h1 class="user_name"> Алексей Дикий </h1>
+                        <h2 class="date_late"> 2 года назад </h2>
+                    </div>
+                    <div class="stars_rait">  
+                        <img src="./image/star-yellow.svg" alt="">
+                        <img src="./image/star-yellow.svg" alt="">
+                        <img src="./image/star-yellow.svg" alt="">
+                        <img src="./image/star-yellow.svg" alt="">
+                        <img src="./image/star-yellow.svg" alt="">
+                    </div>
+                    <p class="otz_text"> Раньше приходилось стоять в очередях, теперь записываюсь за пару минут. Сервис простой, всё понятно, даже для тех, кто не разбирается в технологиях. Очень доволен, рекомендую! </p>
+                </div>
+                <div class="otz_card"> 
+                    <div class="first_line"> 
+                        <h1 class="user_name"> Елена Смирнова </h1>
+                        <h2 class="date_late"> 1 год назад </h2>
+                    </div>
+                    <div class="stars_rait">  
+                        <img src="./image/star-yellow.svg" alt="">
+                        <img src="./image/star-yellow.svg" alt="">
+                        <img src="./image/star-yellow.svg" alt="">
+                        <img src="./image/star-yellow.svg" alt="">
+                        <img src="./image/star-yellow.svg" alt="">
+                    </div>
+                    <p class="otz_text"> Больше не нужно звонить в регистратуру и ждать ответа. Выбрала врача, время – и готово! Напоминание о приеме приходит на почту. Очень удобно для работающих людей. Спасибо! </p>
+                </div>
+                <div class="otz_card"> 
+                    <div class="first_line"> 
+                        <h1 class="user_name"> Алексей Козлов </h1>
+                        <h2 class="date_late"> 2 года назад </h2>
+                    </div>
+                    <div class="stars_rait">  
+                        <img src="./image/star-yellow.svg" alt="">
+                        <img src="./image/star-yellow.svg" alt="">
+                        <img src="./image/star-yellow.svg" alt="">
+                        <img src="./image/star-yellow.svg" alt="">
+                        <img src="./image/star-yellow.svg" alt="">
+                    </div>
+                    <p class="otz_text"> Пользуюсь уже полгода – никаких сбоев. Можно записаться к узким специалистам без проблем. Интерфейс интуитивный, поддержка отвечает быстро. Теперь только так и записываюсь! </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section4"> 
+            <h1 class="section4_article"> Наши специалисты </h1>
+            <div class="workers_cards"> </div>
+        </section>
+    </div>
+
+    <footer class="footer" id="footer"> 
+        <div class="footer_content"> 
+            <div class="top_block"> 
+            <div class="footer_logo_section"> 
+                <div class="logo"> <img src="./image/white-logo.svg" alt=""> Поликлиника Онлайн </div>
+                <h2> Сервис для записи к врачу онлайн </h2>
+            </div>
+            <ul class="footer_nav"> 
+                <li><a href=""> Главная </a></li>
+                <li><a href=""> О нас </a></li>
+                <li><a href=""> Врачи </a></li>
+                <li><a href=""> Отзывы </a></li> 
+            </ul>
+        </div>
+        <div class="bottom_block"> 
+            <hr>
+            <h2> 2025, ClinicOnlain, all rights reserved </h2>
+        </div>
+        </div>
+        
+    </footer>
+</body>
+
+<script src="./scripts/signup.js"> </script>
+<script src="./scripts/generate_cards.js"> </script>
+</html>
